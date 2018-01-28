@@ -38,6 +38,3 @@ func bytes_sha256_test() {
 	// cannot use hash (type [32]byte) as type []byte in assignment
 }
 
-func main() {
-	bytes_sha256_test()
-}
