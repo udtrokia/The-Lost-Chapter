@@ -1,0 +1,15 @@
+
+# Base Block & BlockChain
+
+## struct
+
+   __Block__
+   + BlockStruct
+   	 + SetHash
+	 + NewBlock
+   + BlockChain
+   	 + NewGenesisBlock
+	 + NewBlockChain
+
+	  
+

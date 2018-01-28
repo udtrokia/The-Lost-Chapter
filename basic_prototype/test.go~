@@ -1,0 +1,11 @@
+package main
+
+import (
+	"strconv"
+	"fmt"
+)
+
+func main() {
+	timestamp := []byte(strconv.FormatInt(b.Timestamp, 10))
+	fmt.Printf(timestamp)
+}
