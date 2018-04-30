@@ -3,7 +3,11 @@ package main
 import (
 	"fmt"
 )
-
+/*
+  测试流程:
+    1. 创建新的区块链
+    2. 添加区块 (存储了交易信息
+*/
 func main() {
 	bc := NewBlockchain()
 
