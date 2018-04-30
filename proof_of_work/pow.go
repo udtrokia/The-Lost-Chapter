@@ -15,15 +15,18 @@ var (
 const targetBits = 24
 
 // ProofOfWork represents a proof-of-work
+/* 工作证明资产 */
 type ProofOfWork struct {
 	block  *Block
 	target *big.Int
 }
 
 // NewProofOfWork builds and returns a ProofOfWork
+/* ProofOfWork 生成函数 */
 func NewProofOfWork(b *Block) *ProofOfWork {
 	target := big.NewInt(1)
 	// NewInt(x) returns an *Int set to the value of the int64 argument x
+	/* NewInt 用来设置 int64 的值 */
 	
 	target.Lsh(target, uint(256-targetBits))
 	// target means total workload
@@ -31,6 +34,7 @@ func NewProofOfWork(b *Block) *ProofOfWork {
 	// Lsh sets z: z = x << n and returnd z
 	////// is targetBits bigger, targets smaller? //////
 	// 2 << 3 == 16
+	/* target 代表当前 POW 难度*/
 	
 	pow := &ProofOfWork{b, target}
 	// target is the size of a block

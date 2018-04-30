@@ -5,6 +5,7 @@ type Blockchain struct {
 }
 
 // addblocks
+/* 添加区块 */
 func (bc *Blockchain) AddBlock(data string) {
 	prevBlock := bc.blocks[len(bc.blocks)-1]
 	newBlock := NewBlock(data, prevBlock.Hash)

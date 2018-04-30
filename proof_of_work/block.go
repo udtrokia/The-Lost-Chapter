@@ -14,6 +14,7 @@ type Block struct {
 }
 
 // new block is not a block, it mixed pow to return a new block
+/* 为区块加入 POW 使用方法 */
 func NewBlock(data string, prevBlockHash []byte) *Block {
 	block := &Block{time.Now().Unix(), []byte(data), prevBlockHash, []byte{}, 0}
 	pow := NewProofOfWork(block)
